@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/dufann">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dunia Fantasi"
+                android:textSize="42sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/logodufan"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/logodufan"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/logodufan"
+                android:textSize="17dp"
+                android:textColor="@color/white"
+                android:text="Dunia Fantasi atau yang biasa di sebut Dufan, merupakan theme park pertama yang dibuka untuk umum pada 29 Agustus 1985 oleh perseroan dan telah memiliki sertifikat ISO 9001:2015 sejak Februari 2017"/>
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/wahana"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="55dp"
+            tools:listitem="@layout/daftar_wahana"/>
+
+    </LinearLayout>
+
+</ScrollView>
